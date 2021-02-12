@@ -10,7 +10,7 @@ export default{
             from: 'Archio<archiosuporte@gmail.com>',
             to: `${user.name} <${user.email}>`,
             subject:user.subject,
-            html: `${user.text}`
+            html: user.text
         })
         console.log('Email enviado')
     }
