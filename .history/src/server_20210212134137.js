@@ -12,13 +12,7 @@ BullBoard.setQueues(Queue.queues.map(queue=>queue.bull))
 
 
 app.use(express.json())
-app.use((req, res,next)=>{
-  res.header("Access-Control-Allow-Origin","*")
-  res.header("Access-Control-Allow-Origin",'GET,PUT,POST,DELETE')
-  app.use(cors())
-  next()
 
-})
 
 app.post('/users', UserController.store)
 
