@@ -4,11 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "prod": "npm-run-all -p prod:*",
-    "prod:server": "nodemon src/server.js",
-    "prod:queue": "nodemon src/queue.js",
-    "build": "sucrase ./src -d ./dist --transforms imports"
-     
+    "dev": "npm-run-all -p dev:*",
+    "dev:server": "npm src/server.js",
+    "dev:queue": "npm src/queue.js"
+    
   },
   "dependencies": {
     "bull": "^3.18.1",

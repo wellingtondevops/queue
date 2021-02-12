@@ -6,9 +6,7 @@
   "scripts": {
     "prod": "npm-run-all -p prod:*",
     "prod:server": "nodemon src/server.js",
-    "prod:queue": "nodemon src/queue.js",
-    "build": "sucrase ./src -d ./dist --transforms imports"
-     
+    "prod:queue": "nodemon src/queue.js"    
   },
   "dependencies": {
     "bull": "^3.18.1",
